@@ -376,6 +376,8 @@ def start_license_checker():
     tmp_file_name = "tmp_npm_license_output.json"
     flag_tmp_node_modules = False
 
+    logger.error("### Error Message ###")
+
     if os.path.isfile(tmp_custom_json) == 1:
         os.remove(tmp_custom_json)
     if os.path.isfile(tmp_file_name) == 1:
